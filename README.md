@@ -51,9 +51,16 @@ _(NB: See Gentile+(subm) for a description of these parameters)_
 **PATH_SAVE**: Path of the output plots _(NB: The plotting routines are still work-in-progress! Use them carefully!)_  
 **NAME**: A name for the directories containing the data (see next step)
 
-## Step 1 : Preparing the data  
+## Step 2 : Preparing the data  
 
 1. Create an input catalog as a csv file with three columns (ID, RA, DEC) for each of the galaxies you'd like to analyze with PhoEBO. The RA-DEC should be the coordinates of the radio-birght source for which you'd like to estimate the flux.
 1. Inside a Working Directory (WD, hereafter), create a series of sub-directories where to store the images that PhoEBO will analyze. Each directory should contain only the data of a single source: therefore, it should be named "NAME_ID" (e.g. COSMOS_1, COSMOS_2 ...) where the IDs are those included in the **input catalog**;
-2. In each sub-directory, place the maps of each source. Each scientific map should be named as its band (e.g. Y.fits, J-fits, IRAC1.fits...). These names are those included in the **opt_bands**, **nir_bands**, and **IRAC_bands** parameters in the _Params.py_ script.
+2. In each sub-directory, place the maps of each source. Each scientific map should be named as its band (e.g. Y.fits, J-fits, IRAC1.fits...). These names are those included in the **opt_bands**, **nir_bands**, and **IRAC_bands** parameters in the _Params.py_ script. You should also upload an uncertainty map for each band: the file should end with __unc.fits_ (e.g. IRAC1_unc.fits). These maps are crucial to optimize the models and to estimate the uncertainties on the extracted fluxes!
+
+## Step 3: Running the code
+
+Running PhoEBO on a single image consists of generating an _image_ object and executing the various functions listed below. A basic example script to run PhoEBO on multiple images can be found in the repository.
+
+# Code Structure
+
 
