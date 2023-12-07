@@ -63,4 +63,6 @@ Running PhoEBO on a single image consists of generating an _image_ object and ex
 
 # Code Structure
 
+The PhEBO code is built around a main python class called "Image"
+
 
