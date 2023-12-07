@@ -5,7 +5,7 @@
 
 
 # Introduction:
-PhoEBO is a code developed by Fabrizio Gentile, Margherita Talia (University of Bologna), and other collaborators to extract accurate photometry of blended objects in low-resolution astronomical images. The code is optimized for the deblending of the Radio-Selected NIRdark galaxies in the COSMOS field, but it can be employed in other similar studies. A full description of the code is presented in Gentile et al (subm), together with its validation on simulated data. For further details, feel free to contact the author at fabrizio.gentile3@unibo.it.
+PhoEBO is a code developed by Fabrizio Gentile, Margherita Talia (University of Bologna), and other collaborators to extract accurate photometry of blended objects in low-resolution astronomical images. The code is optimized for the deblending of the Radio-Selected NIRdark galaxies in the COSMOS field, but it can be employed in other similar studies. A full description of the code is presented in Gentile et al (2023), together with its validation on simulated data. For further details, feel free to contact the author at fabrizio.gentile3@unibo.it.
 
 # Disclaimer:
 We are still working to transform PhoEBO from "a code that we are using" to "a code available for everyone". Be patient if there are still some bugs and the documentation is not perfect. If you spot any errors or if you'd like to collaborate to improve the code or the documentation, feel free to get in touch with us!
@@ -51,7 +51,7 @@ _(NB: See Gentile+(subm) for a description of these parameters)_
 **PATH_SAVE**: Path of the output plots _(NB: The plotting routines are still work-in-progress! Use them carefully!)_  
 **NAME**: A name for the directories containing the data (see next step)
 
-## Step 2 : Preparing the data  
+## Step 2: Preparing the data  
 
 1. Create an input catalog as a csv file with three columns (ID, RA, DEC) for each of the galaxies you'd like to analyze with PhoEBO. The RA-DEC should be the coordinates of the radio-birght source for which you'd like to estimate the flux.
 1. Inside a Working Directory (WD, hereafter), create a series of sub-directories where to store the images that PhoEBO will analyze. Each directory should contain only the data of a single source: therefore, it should be named "NAME_ID" (e.g. COSMOS_1, COSMOS_2 ...) where the IDs are those included in the **input catalog**;
@@ -65,7 +65,7 @@ Running PhoEBO on a single image consists of generating an _image_ object and ex
 
 The PhEBO code is built around a main Python class called "Image" that executes the main tasks of the algorithm, the main methods are:
 
-1. **The constructor** ("__init__"):
+1. **The constructor** ("_init_"):
    This method builds one object for each galaxy. It requires three "detection images" (for the optical, NIR, and IRAC wavelengths), the PSF FWHMs of these images, and their pixel scales.
 
 2. **A loader for the IRAC PSFs** ("_image.load_irac_psfs_"):
