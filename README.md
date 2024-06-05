@@ -5,7 +5,7 @@
 
 
 # Introduction:
-PhoEBO is a code developed by Fabrizio Gentile, Margherita Talia (University of Bologna), and other collaborators to extract accurate photometry of blended objects in low-resolution astronomical images. The code is optimized for the deblending of the Radio-Selected NIRdark galaxies in the COSMOS field, but it can be employed in other similar studies. A full description of the code is presented in Gentile et al (2023), together with its validation on simulated data. For further details, feel free to contact the author at fabrizio.gentile3@unibo.it.
+PhoEBO is a code developed by Fabrizio Gentile, Margherita Talia (University of Bologna), and other collaborators to extract accurate photometry of blended objects in low-resolution astronomical images. The code is optimized for the deblending of the Radio-Selected NIRdark galaxies in the COSMOS field, but it can be employed in other similar studies. A full description of the code is presented in [Gentile et al (2024)](https://ui.adsabs.harvard.edu/abs/2024ApJ...962...26G/abstract), together with its validation on simulated data. For further details, feel free to contact the author at fabrizio.gentile3@unibo.it.
 
 # Disclaimer:
 We are still working to transform PhoEBO from "a code that we are using" to "a code available for everyone". Be patient if there are still some bugs and the documentation is not perfect. If you spot any errors or if you'd like to collaborate to improve the code or the documentation, feel free to get in touch with us!
